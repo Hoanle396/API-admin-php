@@ -53,7 +53,7 @@ class CheckoutController extends Controller
                 return response()->json(["message"=>"Đặt Hàng Thành Công Đơn Hàng Của Bạn Đang Được Xử Lý"]);
             } else if ($request->pay == 'online') {
                 $respone=[
-                    "message"=>"Đặt Hàng Thành Công Đang Chuyển Hướng Vui Lòng Đợi",
+                    "message"=>"Đặt Hàng Thành Công Đang Chuyển Hướng",
                     "redirect"=>"online",
                     "total"=>$request->total,
                     "code"=>$code
