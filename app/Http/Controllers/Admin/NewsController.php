@@ -59,11 +59,11 @@ class NewsController extends Controller
             ]);
             $image = $request->file('image');
             $newimage = time() . "-" . $request->name . "." . $image->getClientOriginalExtension();
-            $image->move('./imageupload', $newimage);
+            $image->move('./public/imageupload', $newimage);
             $data = [
                 'title' => $request->name,
                 'description' => $request->description,
-                'image' => 'http://127.0.0.1:8000/imageupload/' . $newimage,
+                'image' => 'http://laravelmyapp.herokuapp.com/public/imageupload/' . $newimage,
             ];
             News::create($data);
             Session::put('message', 'Đã Thêm Tin Này');
