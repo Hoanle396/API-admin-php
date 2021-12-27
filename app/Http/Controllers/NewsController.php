@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 class NewsController extends Controller
 {
     public function index(){
-        $news=News::paginate(1);
-        $new = News::latest('id')->first();
+        $news=News::orderByDesc('id')->paginate(4);
+        $new = News::first();
         return response()->json(['new'=>$new,'news'=>$news]);
     }
     public function show($id){
