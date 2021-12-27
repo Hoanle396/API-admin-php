@@ -7,81 +7,30 @@ use Illuminate\Http\Request;
 
 class ApiProductController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         $product = Product::paginate(8);
         return response()->json($product);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         $product = Product::where('product_id',$id)->get()->first();
         return response()->json($product);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
+    public function search($search){
+        $all_product = Product::where("product_name", "like", "%" . $search . "%")
+            ->orWhere("product_price", "like", "%" . $search . "%")
+            ->orWhere("product_description", "like", "%" . $search . "%")
+            ->orWhere("product_origin", "like", "%" . $search . "%")
+            ->orWhere("product_manufacturer", "like", "%" . $search . "%")
+            ->paginate(8);
+        return response()->json($all_product);
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+    public function filters($value) {
+        $products=Product::where("product_price",'<=',$value)->paginate(8);
+        return response()->json($products);
     }
 }
