@@ -81,7 +81,7 @@
                 </div>
                 <footer class="panel-footer">
                     <div class="row">
-                        {{$order->links()}}
+                        {{$all->links()}}
                     </div>
                 </footer>
             </div>
