@@ -6,6 +6,7 @@ use App\Http\Requests\APIAccountRequest;
 use App\Http\Requests\ApiLoginRequest;
 use App\Http\Requests\PasswordRequest;
 use App\Http\Requests\UserChangeRequest;
+use App\Models\OrderDetail;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -62,5 +63,9 @@ class ApiUserController extends Controller
             return response()->json(['message'=>'Đã Cập Nhật Mật Khẩu Mới'],200);
         }
         return response()->json(['message'=>'Mật Khẩu Cũ Không Đúng'],401);
+    }
+    public function show($email){
+        $order=OrderDetail::where('user_email',$email)->get();
+        return response()->json($order);
     }
 }
