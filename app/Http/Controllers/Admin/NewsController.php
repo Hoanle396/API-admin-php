@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\News;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
@@ -58,7 +59,7 @@ class NewsController extends Controller
                 ]
             ]);
             $image = $request->file('image');
-            $newimage = time() . "-" . $request->name . "." . $image->getClientOriginalExtension();
+            $newimage =  md5(time()) . "-news." .$image->getClientOriginalExtension();
             $image->move('./imageupload', $newimage);
             $data = [
                 'title' => $request->name,
@@ -120,7 +121,7 @@ class NewsController extends Controller
                 ]
             ]);
             $image = $request->file('image');
-            $newimage = time() . "-" . $request->name . "." . $image->getClientOriginalExtension();
+            $newimage = md5(time()) . "-news." . $image->getClientOriginalExtension();
             $image->move('./imageupload', $newimage);
             $data = [
                 'title' => $request->name,
