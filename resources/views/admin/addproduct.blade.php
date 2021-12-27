@@ -13,12 +13,12 @@
                     </header>
                     <div class="panel-body">
                         <div class=" form">
-                            <form class="cmxform form-horizontal " action="{{URL::to('Admin/product')}}" method="post" enctype="multipart/form-data" validate>
+                            <form class="cmxform form-horizontal " action="{{URL::to('Admin/product')}}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group ">
                                     <label for="cname" class="control-label col-lg-3">Tên Sản Phẩm</label>
                                     <div class="col-lg-6">
-                                        <input class="input-lg m-bot15 form-control" name="product_name" minlength="2" type="text" required="">
+                                        <input class="input-lg m-bot15 form-control" name="product_name" minlength="2" type="text" >
                                         @error('product_name')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
@@ -27,7 +27,7 @@
                                 <div class="form-group ">
                                     <label for="cemail" class="control-label col-lg-3">Giá</label>
                                     <div class="col-lg-6">
-                                        <input class="form-control input-lg m-bot15" type="number" min="1" name="product_price" required="">
+                                        <input class="form-control input-lg m-bot15" type="number" min="1" name="product_price"  >
                                         @error('product_price')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
@@ -36,7 +36,7 @@
                                 <div class="form-group ">
                                     <label for="curl" class="control-label col-lg-3">Xuất Xứ</label>
                                     <div class="col-lg-6">
-                                        <input class="form-control input-lg m-bot15" type="text" name="product_origin" required="">
+                                        <input class="form-control input-lg m-bot15" type="text" name="product_origin" >
                                         @error('product_origin')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
@@ -45,7 +45,7 @@
                                 <div class="form-group ">
                                     <label for="cemail" class="control-label col-lg-3">Hãng Sản Xuất</label>
                                     <div class="col-lg-6">
-                                        <input class="form-control input-lg m-bot15" type="text" name="product_manufacturer" required="">
+                                        <input class="form-control input-lg m-bot15" type="text" name="product_manufacturer" >
                                         @error('product_manufacturer')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
@@ -54,7 +54,7 @@
                                 <div class="form-group ">
                                     <label for="curl" class="control-label col-lg-3">Số Lượng</label>
                                     <div class="col-lg-6">
-                                        <input class="form-control input-lg m-bot15" type="number" min="1" name="product_discount" required="">
+                                        <input class="form-control input-lg m-bot15" type="number" min="1" name="product_discount">
                                         @error('product_discount')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
@@ -63,7 +63,7 @@
                                 <div class="form-group ">
                                     <label for="ccomment" class="control-label col-lg-3">Mô Tả</label>
                                     <div class="col-lg-6">
-                                        <textarea class="form-control input-lg m-bot15" id="product_description" name="product_description" style=" resize: none;" required=""></textarea>
+                                        <textarea class="form-control input-lg m-bot15" id="product_description" name="product_description" style=" resize: none;" ></textarea>
                                         @error('product_description')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
@@ -72,7 +72,7 @@
                                 <div class="form-group">
                                     <label for="exampleInputFile" class="control-label col-lg-3">Hình Ảnh</label>
                                     <div class="col-lg-6">
-                                        <input type="file" id="exampleInputFile" name="product_image" accept="image/*" required="">
+                                        <input type="file" id="exampleInputFile" name="product_image" accept="image/*" >
                                         @error('product_image')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
