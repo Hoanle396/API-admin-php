@@ -5,7 +5,7 @@
 		<div class="container-fluid">
 			<div class="market-updates">
 				<div class="col-md-3 market-update-gd">
-					<div class="market-update-block clr-block-2">
+					<div class="market-update-block clr-block-3">
 						<div class="col-md-4 market-update-right">
 							<i class="fa fa-eye"> </i>
 						</div>
@@ -17,7 +17,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 market-update-gd">
-					<div class="market-update-block clr-block-1">
+					<div class="market-update-block clr-block-3">
 						<div class="col-md-4 market-update-right">
 							<i class="fa fa-users"></i>
 						</div>
@@ -41,7 +41,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 market-update-gd">
-					<div class="market-update-block clr-block-4">
+					<div class="market-update-block clr-block-3">
 						<div class="col-md-4 market-update-right">
 							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 						</div>
