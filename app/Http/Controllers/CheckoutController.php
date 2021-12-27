@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Http\Requests\DoneRequest;
+use App\Jobs\sendmail;
 use App\Mail\OrderShipped;
 use App\Models\Bank;
 use Carbon\Carbon as time;
@@ -49,11 +50,14 @@ class CheckoutController extends Controller
                     'code' => $code,
                     'reson' => 'Gửi từ hệ thống'
                 ];
-                Mail::to($request['user']['email'])->send(new OrderShipped($data, 'Đơn Hàng Của Bạn', 'order'));
+                $send = New sendmail($request['user']['email'],new OrderShipped($data, 'Đơn Hàng Của Bạn', 'order'));
+                dispatch($send);
+
+//                Mail::to($request['user']['email'])->send(new OrderShipped($data, 'Đơn Hàng Của Bạn', 'order'));
                 return response()->json(["message"=>"Đặt Hàng Thành Công Đơn Hàng Của Bạn Đang Được Xử Lý"]);
             } else if ($request->pay == 'online') {
                 $respone=[
-                    "message"=>"Đặt Hàng Thành Công Đang Chuyển Hướng Vui Lòng Đợi",
+                    "message"=>"Đặt Hàng Thành Công Đang Chuyển Hướng",
                     "redirect"=>"online",
                     "total"=>$request->total,
                     "code"=>$code
@@ -79,8 +83,9 @@ class CheckoutController extends Controller
             'code' => $request->code,
             'reson' => 'Gửi từ hệ thống'
         ];
-        Mail::to($order[0]->user_email)->send(new OrderShipped($data, 'Đơn Hàng Của Bạn', 'order'));
-
+//        Mail::to($order[0]->user_email)->send(new OrderShipped($data, 'Đơn Hàng Của Bạn', 'order'));
+        $send = New sendmail($order[0]->user_email,new OrderShipped($data, 'Đơn Hàng Của Bạn', 'order'));
+        dispatch($send);
     }
 
 }
