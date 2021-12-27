@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductRequest;
 use App\Models\Product;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
@@ -51,7 +52,7 @@ class ProductConroller extends Controller
     public function store(ProductRequest $request)
     {
         $image = $request->file('product_image');
-        $newimage = time() . "-" . $request->product_name . ".".$image->getClientOriginalExtension();
+        $newimage = md5(time()) . "-product.".$image->getClientOriginalExtension();
         $image->move('./imageupload', $newimage);
         $data = [
             'product_name' => $request->product_name,
