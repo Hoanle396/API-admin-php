@@ -38,10 +38,10 @@
                                 <td>{{$a->homePhone}}</td>
                                 <td>{{$a->status}}</td>
                                 <td>
-                                    <a  href="{{ route('service.edit', ['service' => $a->id]) }}" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>|
                                     <form method="post" action="{{route('service.destroy',$a->id)}}">
                                         @method('delete')
                                         @csrf
+                                        <a  href="{{ route('service.edit', ['service' => $a->id]) }}" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>|
                                         <button type="submit" onclick="return confirm('Bạn Có Chắc Muốn Xóa Chứ Hành Động Không Thể Phục Hồi')" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
                                     </form>
                                 </td>
