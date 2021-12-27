@@ -122,4 +122,12 @@ class HomeController extends Controller
     {
         //
     }
+    public function logout(){
+        if(!Session::get("admin_name")){
+            return Redirect::to('/');
+        }else{
+                Session::put("admin_name",null);
+                return Redirect::to('/');
+        }
+    }
 }
