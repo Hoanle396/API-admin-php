@@ -47,10 +47,8 @@
                 {{csrf_field()}}
                 <input type="email" class="ggg" name="email" placeholder="E-MAIL" required="">
                 <input type="password" class="ggg" name="password" placeholder="PASSWORD" required="">
-                <span><input type="checkbox" />Nhớ Mật Khẩu</span>
-                <h6><a href="#">Quên Mật Khẩu?</a></h6>
                 <div class="clearfix"></div>
-                <input type="submit" value="Sign In" name="login">
+                <input type="submit" value="Đăng Nhập" name="login">
             </form>
             <!-- <p>Chưa Có Tài Kh ?<a href="registration.html">Create an account</a></p> -->
         </div>
