@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 use App\Mail\OrderShipped;
+use Exception;
+
 class ServiceController extends Controller
 {
     /**
