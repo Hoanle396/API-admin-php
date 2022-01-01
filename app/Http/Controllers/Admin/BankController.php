@@ -61,7 +61,7 @@ class BankController extends Controller
                 'bankname' => $request->name,
                 'bankauth' => $request->description,
                 'banknumber'=>$request->banknumber,
-                'qrcode' => 'http://127.0.0.1:8000/imageupload/' . $newimage,
+                'qrcode' => env('APP_HOST','http://127.0.0.1:8000').'/imageupload/' . $newimage,
             ];
             Bank::where('id',1)->update($data);
             Session::put('message', 'Đã Sửa ');
