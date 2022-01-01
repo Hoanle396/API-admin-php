@@ -59,12 +59,12 @@ class NewsController extends Controller
                 ]
             ]);
             $image = $request->file('image');
-            $newimage =  md5(time()) . "-news." .$image->getClientOriginalExtension();
-            $image->move('./imageupload', $newimage);
+            $newimage = time() . "-news." . $image->getClientOriginalExtension();
+            $image->move('./public/imageupload', $newimage);
             $data = [
                 'title' => $request->name,
                 'description' => $request->description,
-                'image' => 'http://127.0.0.1:8000/imageupload/' . $newimage,
+                'image' => env('APP_HOST','http://127.0.0.1:8000').'/imageupload/' . $newimage,
             ];
             News::create($data);
             Session::put('message', 'Đã Thêm Tin Này');
@@ -126,7 +126,7 @@ class NewsController extends Controller
             $data = [
                 'title' => $request->name,
                 'description' => $request->description,
-                'image' => 'http://127.0.0.1:8000/imageupload/' . $newimage,
+                'image' => env('APP_HOST','http://127.0.0.1:8000').'/imageupload/' . $newimage,
             ];
             News::where('id',$id)->update($data);
             Session::put('message', 'Đã Sửa Tin Này');
