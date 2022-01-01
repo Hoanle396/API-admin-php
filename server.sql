@@ -2,10 +2,17 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
+<<<<<<< HEAD
 -- Máy chủ: 127.0.0.1
 -- Thời gian đã tạo: Th12 07, 2021 lúc 08:51 AM
 -- Phiên bản máy phục vụ: 10.4.20-MariaDB
 -- Phiên bản PHP: 8.0.9
+=======
+-- Host: 127.0.0.1
+-- Generation Time: Dec 03, 2021 at 11:40 AM
+-- Server version: 10.4.20-MariaDB
+-- PHP Version: 8.0.9
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +25,21 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
+<<<<<<< HEAD
 -- Cơ sở dữ liệu: `server`
+=======
+-- Database: `server`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `admins`
+=======
+-- Table structure for table `admins`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `admins` (
@@ -38,7 +53,11 @@ CREATE TABLE `admins` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `admins`
+=======
+-- Dumping data for table `admins`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 INSERT INTO `admins` (`id`, `email`, `password`, `name`, `phonenumber`, `created_at`, `updated_at`) VALUES
@@ -47,7 +66,11 @@ INSERT INTO `admins` (`id`, `email`, `password`, `name`, `phonenumber`, `created
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `banks`
+=======
+-- Table structure for table `banks`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `banks` (
@@ -61,7 +84,11 @@ CREATE TABLE `banks` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `banks`
+=======
+-- Dumping data for table `banks`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 INSERT INTO `banks` (`id`, `banknumber`, `bankauth`, `bankname`, `qrcode`, `created_at`, `updated_at`) VALUES
@@ -70,7 +97,11 @@ INSERT INTO `banks` (`id`, `banknumber`, `bankauth`, `bankname`, `qrcode`, `crea
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `failed_jobs`
+=======
+-- Table structure for table `failed_jobs`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `failed_jobs` (
@@ -86,7 +117,11 @@ CREATE TABLE `failed_jobs` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `feed_backs`
+=======
+-- Table structure for table `feed_backs`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `feed_backs` (
@@ -101,7 +136,11 @@ CREATE TABLE `feed_backs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `feed_backs`
+=======
+-- Dumping data for table `feed_backs`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 INSERT INTO `feed_backs` (`id`, `firstname`, `lastname`, `email`, `phonenumber`, `message`, `created_at`, `updated_at`) VALUES
@@ -111,6 +150,7 @@ INSERT INTO `feed_backs` (`id`, `firstname`, `lastname`, `email`, `phonenumber`,
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `jobs`
 --
 
@@ -128,6 +168,9 @@ CREATE TABLE `jobs` (
 
 --
 -- Cấu trúc bảng cho bảng `meets`
+=======
+-- Table structure for table `meets`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `meets` (
@@ -142,6 +185,7 @@ CREATE TABLE `meets` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+<<<<<<< HEAD
 --
 -- Đang đổ dữ liệu cho bảng `meets`
 --
@@ -155,6 +199,12 @@ INSERT INTO `meets` (`meets_id`, `id`, `service_fullname`, `service_email`, `tim
 
 --
 -- Cấu trúc bảng cho bảng `migrations`
+=======
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `migrations`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `migrations` (
@@ -164,7 +214,11 @@ CREATE TABLE `migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `migrations`
+=======
+-- Dumping data for table `migrations`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
@@ -186,12 +240,20 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (16, '2021_11_24_141646_create_orders_table', 1),
 (17, '2021_11_24_141721_create_order_details_table', 1),
 (18, '2021_11_25_025809_create_banks_table', 1),
+<<<<<<< HEAD
 (20, '2021_12_06_032901_create_jobs_table', 2);
+=======
+(19, '2021_11_27_124947_create_jobs_table', 2);
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `news`
+=======
+-- Table structure for table `news`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `news` (
@@ -204,6 +266,7 @@ CREATE TABLE `news` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `news`
 --
 
@@ -218,11 +281,22 @@ INSERT INTO `news` (`id`, `title`, `description`, `image`, `created_at`, `update
 (11, 'Đà Nẵng tăng cường công tác phòng, chống dịch trước nguy cơ bùng phát', '<p><strong>TP. Đ&agrave; Nẵng sẽ thực hiện 3 trụ cột trong c&ocirc;ng t&aacute;c ph&ograve;ng, chống dịch: C&aacute;ch ly nhanh, hẹp nhất; x&eacute;t nghiệm thần tốc, hợp l&yacute;, hiệu quả, tiết kiệm; điều trị t&iacute;ch cực từ sớm, từ xa, g&oacute;p phần giảm chuyển nặng, giảm tử vong.</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Tối 3/12, Th&agrave;nh uỷ Đ&agrave; Nẵng đ&atilde; c&oacute; c&ocirc;ng văn về việc tăng cường thực hiện biện ph&aacute;p &ldquo;Th&iacute;ch ứng an to&agrave;n, linh hoạt, kiểm so&aacute;t hiệu quả dịch COVID-19.</p>\r\n\r\n<p>&Ocirc;ng Lương Nguyễn Minh Triết, Ph&oacute; B&iacute; thư Th&agrave;nh uỷ Đ&agrave; Nẵng cho biết, thời gian qua cả hệ thống ch&iacute;nh trị th&agrave;nh phố đ&atilde; tập trung triển khai thực hiện quyết liệt c&aacute;c chỉ đạo của Trung ương, th&agrave;nh phố về ph&ograve;ng, chống dịch COVID-19. Nhờ đ&oacute;, dịch bệnh cơ bản được kiểm so&aacute;t, Th&agrave;nh phố từng bước thực hiện kh&aacute; hiệu quả chủ trương &ldquo;Th&iacute;ch ứng an to&agrave;n, linh hoạt, kiểm so&aacute;t hiệu quả dịch COVID-19&rdquo; theo tinh thần Nghị quyết số 128 của Ch&iacute;nh phủ v&agrave; Quyết định số 4800 của Bộ Y tế.</p>\r\n\r\n<p>Tuy nhi&ecirc;n, từ đầu th&aacute;ng 11 đến nay, t&igrave;nh h&igrave;nh dịch COVID-19 tr&ecirc;n địa b&agrave;n diễn biến phức tạp, c&oacute; nguy cơ b&ugrave;ng ph&aacute;t đợt dịch mới. Một số địa phương, đơn vị v&agrave; người d&acirc;n c&oacute; sự chủ quan, lơi lỏng trong c&ocirc;ng t&aacute;c ph&ograve;ng, chống dịch; việc truy vết, khoanh v&ugrave;ng, x&eacute;t nghiệm, c&aacute;ch ly chưa thật sự tốt, c&ograve;n t&igrave;nh trạng bỏ s&oacute;t F1 v&agrave; chậm xử l&yacute; c&aacute;c ổ dịch; c&oacute; sự l&uacute;ng t&uacute;ng trong việc thực hiện c&aacute;c biện ph&aacute;p ph&ograve;ng, chống dịch trong c&aacute;c cơ sở sản xuất, nhất l&agrave; khi ph&aacute;t hiện ca F0...</p>\r\n\r\n<p>Trước diễn biến phức tạp, nhất l&agrave; khi thế giới đ&atilde; ghi nhận biến chủng mới Omicron, c&oacute; nguy cơ b&ugrave;ng ph&aacute;t đợt dịch mới, Thường trực Th&agrave;nh ủy đề nghị c&aacute;c địa phương, đơn vị tiếp tục thực hiện c&aacute;c biện ph&aacute;p ph&ograve;ng, chống dịch COVID-19 một c&aacute;ch quyết liệt, chủ động hơn, trong đ&oacute;: Tập trung triển khai thực hiện nghi&ecirc;m t&uacute;c, quyết liệt, chủ động v&agrave; linh hoạt c&aacute;c chủ trương, chỉ đạo của Ban B&iacute; thư, Ch&iacute;nh phủ, Thủ tướng Ch&iacute;nh phủ, Th&agrave;nh ủy, Ban Chỉ đạo Ph&ograve;ng, chống dịch COVID-19 th&agrave;nh phố về c&ocirc;ng t&aacute;c ph&ograve;ng, chống dịch COVID-19, với quan điểm: Ph&ograve;ng, chống dịch l&agrave; nhiệm vụ thường xuy&ecirc;n, l&acirc;u d&agrave;i; coi ph&ograve;ng, chống dịch l&agrave; nhiệm vụ ưu ti&ecirc;n h&agrave;ng đầu, bảo vệ sức khoẻ v&agrave; an to&agrave;n t&iacute;nh mạng của người d&acirc;n l&agrave; tr&ecirc;n hết, trước hết; ph&aacute;t huy vai tr&ograve; của người d&acirc;n l&agrave; trung t&acirc;m, l&agrave; chủ thể trong ph&ograve;ng, chống dịch; &ldquo;An to&agrave;n mới sản xuất, sản xuất phải an to&agrave;n&rdquo;.</p>\r\n\r\n<p>Tiếp tục ph&aacute;t huy sức mạnh, sự v&agrave;o cuộc của cả hệ thống ch&iacute;nh trị v&agrave; người d&acirc;n tr&ecirc;n địa b&agrave;n trong c&ocirc;ng t&aacute;c ph&ograve;ng, chống dịch; ph&acirc;n c&ocirc;ng nhiệm vụ r&otilde; r&agrave;ng giữa c&aacute;c cơ quan, địa phương, đơn vị li&ecirc;n quan, nhất l&agrave; khi xảy ra dịch bệnh tr&ecirc;n địa b&agrave;n quản l&yacute;; ph&aacute;t huy vai tr&ograve; của c&aacute;c Tổ COVID cộng đồng, nhất l&agrave; việc gi&aacute;m s&aacute;t c&aacute;c trường hợp về từ địa phương kh&aacute;c, c&aacute;c trường hợp c&aacute;ch ly y tế, chữa trị COVID-19 tại nh&agrave;.</p>\r\n\r\n<p>Thực hiện tốt 3 trụ cột trong c&ocirc;ng t&aacute;c ph&ograve;ng, chống dịch: C&aacute;ch ly nhanh, hẹp nhất, nghi&ecirc;m ngặt nhất c&oacute; thể; x&eacute;t nghiệm thần tốc, nhanh hơn tốc độ l&acirc;y lan của dịch, đảm bảo khoa học, hợp l&yacute;, hiệu quả, tiết kiệm; điều trị t&iacute;ch cực từ sớm, từ xa, ngay tại cơ sở, g&oacute;p phần giảm chuyển nặng, giảm tử vong.</p>\r\n\r\n<p>Ban Chỉ đạo Ph&ograve;ng, chống dịch COVID-19, Ban c&aacute;n sự đảng UBND Th&agrave;nh phố chỉ đạo: Tổng kết, đ&aacute;nh gi&aacute; c&ocirc;ng t&aacute;c ph&ograve;ng, chống dịch COVID-19 đợt dịch thứ 4; b&aacute;m s&aacute;t c&aacute;c chỉ đạo của Trung ương để khẩn trương x&acirc;y dựng c&aacute;c kế hoạch, kịch bản ph&ograve;ng, chống dịch COVID-19 trong năm 2022 v&agrave; c&aacute;c năm tiếp theo; từng bước ổn định, kh&ocirc;i phục v&agrave; ph&aacute;t triển kinh tế - x&atilde; hội, sản xuất kinh doanh, đảm bảo an sinh x&atilde; hội v&agrave; an to&agrave;n ph&ograve;ng, chống dịch; thực hiện mục ti&ecirc;u k&eacute;p, tập trung phục hồi kinh tế, giải quyết việc l&agrave;m, đảm bảo an sinh x&atilde; hội gắn với ph&ograve;ng, chống dịch.</p>\r\n\r\n<p>Tiếp tục đẩy nhanh tiến độ ti&ecirc;m vaccine ph&ograve;ng COVID-19 cho trẻ em từ 12 tuổi trở l&ecirc;n v&agrave; việc trả mũi 2 cho người đ&atilde; ti&ecirc;m mũi 1; tăng cường tuy&ecirc;n truyền, đề nghị người d&acirc;n chưa ti&ecirc;m vaccine đăng k&yacute; v&agrave; sớm được ti&ecirc;m vaccine. X&acirc;y dựng kế hoạch để sẵn s&agrave;ng ti&ecirc;m mũi 3 khi Trung ương chỉ đạo thực hiện.</p>\r\n\r\n<p>Tiếp tục n&acirc;ng cao năng lực cho y tế cơ sở; đảm bảo c&ocirc;ng t&aacute;c cấp cứu, điều trị, hạn chế tử vong; trong đ&oacute;, lưu &yacute; kế hoạch, điều kiện để sẵn s&agrave;ng triển khai thiết lập cơ sở thu dung, điều trị v&agrave; kế hoạch bảo đảm số giường hồi sức cấp cứu (ICU) tại c&aacute;c cơ sở kh&aacute;m bệnh, chữa bệnh (bao gồm cả y tư nh&acirc;n), sẵn s&agrave;ng đ&aacute;p ứng t&igrave;nh h&igrave;nh dịch ở cấp độ cao nhất (cấp độ 4).</p>\r\n\r\n<p>Chỉ đạo c&aacute;c quận, huyện ho&agrave;n thiện kế hoạch thiết lập trạm y tế lưu động, tổ chăm s&oacute;c người nhiễm COVID-19 tại cộng đồng v&agrave; c&oacute; kế hoạch cung cấp &ocirc; xy y tế cho c&aacute;c trạm y tế x&atilde;, phường để đ&aacute;p ứng khi c&oacute; dịch xảy ra. Triển khai thực hiện c&oacute; hiệu quả việc th&iacute; điểm c&aacute;ch ly, chăm s&oacute;c, điều trị người nhiễm COVID-19 tại nh&agrave;/ nơi lưu tr&uacute;.</p>\r\n\r\n<p>Thường xuy&ecirc;n cập nhật cấp độ dịch của c&aacute;c phường, x&atilde;, quận, huyện; đ&aacute;nh gi&aacute; hiệu quả việc sử dụng c&aacute;c phần mềm, ứng dụng ph&ograve;ng, chống dịch, từ đ&oacute; đề xuất c&aacute;c giải ph&aacute;p để n&acirc;ng cao hiệu quả sử dụng trong thời gian đến.</p>\r\n\r\n<p>Y&ecirc;u cầu thực hiện nghi&ecirc;m t&uacute;c c&aacute;c quy định về ph&ograve;ng, chống dịch, nhất l&agrave; tại những nơi tập trung đ&ocirc;ng người, c&aacute;c cơ quan, nh&agrave; m&aacute;y, x&iacute; nghiệp, c&aacute;c chợ, si&ecirc;u thị, bệnh viện&hellip;; ch&uacute; trọng đảm bảo an to&agrave;n ph&ograve;ng, chống dịch tại trường học khi học sinh đi học trực tiếp.</p>\r\n\r\n<p>Tập trung kiểm tra phương &aacute;n ph&ograve;ng, chống dịch v&agrave; việc qu&eacute;t m&atilde; QRCode; ki&ecirc;n quyết xử l&yacute; nghi&ecirc;m c&aacute;c trường hợp vi phạm; tiếp tục thực hiện c&aacute;c ch&iacute;nh s&aacute;ch hỗ trợ doanh nghiệp, người d&acirc;n, nhất l&agrave; c&aacute;c đối tượng yếu thế để c&oacute; điều kiện phục hồi, ổn định sản xuất, sinh hoạt sau dịch bệnh.</p>\r\n\r\n<p>Chiều 3/12, Ban Chỉ đạo ph&ograve;ng, chống COVID-19 Th&agrave;nh phố cho biết, trong ng&agrave;y, Đ&agrave; Nẵng ghi nhận 119 ca mắc COVID-19, trong đ&oacute; c&oacute; 34 ca chưa c&aacute;ch ly.&nbsp;To&agrave;n th&agrave;nh phố đang thiết lập 193 điểm phong tỏa với 1.452 hộ (8.992 nh&acirc;n khẩu); duy tr&igrave; 18 cơ sở c&aacute;ch ly tập trung, thực hiện c&aacute;ch ly 1.324 người.</p>\r\n\r\n<p>T&iacute;nh từ ng&agrave;y 16/10 đến nay, Đ&agrave; Nẵng ghi nhận 1.390 ca mắc COVID-19.</p>', 'http://127.0.0.1:8000/imageupload/c45efa0cc2ce4d2ba474c2db45677d45-news.jpg', '2021-12-05 01:55:22', '2021-12-05 01:55:22'),
 (12, 'Mổ ruột thừa cấp cứu cho bệnh nhân COVID-19', '<h2><strong>C&aacute;c b&aacute;c sĩ Bệnh viện Đa khoa tỉnh Bắc Giang vừa mổ cấp cứu cho một bệnh nh&acirc;n nhiễm COVID-19 được chẩn đo&aacute;n vi&ecirc;m ruột thừa cấp.</strong></h2>\r\n\r\n<p>Bệnh nh&acirc;n L.T.T., 25 tuổi, tr&uacute; tại Nghĩa Phương, Lục Nam, Bắc Giang nhập viện c&ugrave;ng chẩn đo&aacute;n dương t&iacute;nh với SARS-CoV-2. Sau 10 ng&agrave;y v&agrave;o điều trị tại bệnh viện, bệnh nh&acirc;n xuất hiện t&igrave;nh trạng đau bụng tr&ecirc;n rốn, kh&ocirc;ng sốt.</p>\r\n\r\n<p>Đến tối, bệnh nh&acirc;n đau tăng dần l&ecirc;n, đau từng cơn, lan xuống hố chậu phải, k&egrave;m theo n&ocirc;n, kh&ocirc;ng sốt v&agrave; được chẩn đo&aacute;n&nbsp;<a href=\"https://vtv.vn/viem-ruot-thua.html\" target=\"_blank\">vi&ecirc;m ruột thừa</a>&nbsp;cấp.</p>\r\n\r\n<p>Bệnh nh&acirc;n được chuyển v&agrave;o phẫu thuật cắt ruột thừa tại ph&ograve;ng &aacute;p lực &acirc;m trong khu điều trị bệnh nh&acirc;n COVID-19. Sau gần 1 giờ, ca mổ diễn ra th&agrave;nh c&ocirc;ng v&agrave; gi&uacute;p bệnh nh&acirc;n vượt qua t&igrave;nh trạng nguy kịch.</p>\r\n\r\n<p>Hiện tại, sau 2 ng&agrave;y phẫu thuật, bệnh nh&acirc;n đ&atilde; ổn định tiếp tục được điều trị tại Khoa Truyền nhiễm.</p>\r\n\r\n<p>Đ&acirc;y l&agrave; ca mổ cấp cứu cắt ruột thừa thứ 2 cho bệnh nh&acirc;n nhiễm COVID-19 được thực hiện th&agrave;nh c&ocirc;ng ngay tại khu c&aacute;ch ly - Khoa Truyền nhiễm, Bệnh viện Đa khoa tỉnh Bắc Giang. Trước đ&oacute;, rất nhiều ca phẫu thuật cấp cứu đ&atilde; được diễn ra tại cả khu c&aacute;ch ly v&agrave; khu nghi nhiễm.</p>\r\n\r\n<p>Hiện tại, Khoa Truyền nhiễm, Bệnh viện Đa khoa tỉnh Bắc Giang đang điều trị cho 40 bệnh nh&acirc;n nhiễm COVID-19. Bệnh viện lu&ocirc;n lu&ocirc;n sẵn s&agrave;ng tiếp nhận v&agrave; điều trị bệnh nh&acirc;n COVID-19 cũng như chuẩn bị tốt c&aacute;c phương tiện cho c&aacute;c cuộc phẫu thuật cấp cứu để cứu sống bệnh nh&acirc;n ngay tại khu c&aacute;ch ly.</p>', 'http://127.0.0.1:8000/imageupload/1211e74ca64796629ab035d4bba916de-news.jpg', '2021-12-05 01:58:56', '2021-12-05 01:58:56'),
 (13, 'Tăng cường nhân lực điều trị cho 5 tỉnh Miền Nam, rà soát tiêm chủng cho những người có nguy cơ cao', '<p><strong>Chiều ng&agrave;y&nbsp;06/12/2021, Bộ trưởng Bộ Y tế Nguyễn Thanh Long đ&atilde; chủ tr&igrave; họp trực tuyến với l&atilde;nh đạo c&aacute;c tỉnh đang c&oacute; ca mắc COVID-19, số ca tử vong gia tăng trong thời gian gần đ&acirc;y l&agrave; TP Cần Thơ, T&acirc;y Ninh, S&oacute;c Trăng, B&agrave; Rịa- Vũng T&agrave;u v&agrave; An Giang.</strong></p>\r\n\r\n<p>B&aacute;o c&aacute;o của TP Cần Thơ cho biết, số ca mắc thời gian gần đ&acirc;y đang gia tăng, hiện đ&atilde; tr&ecirc;n 30.000 ca; TP đang ở cấp độ dịch 3.</p>\r\n\r\n<p>Tại An Giang, số ca mắc COVID-19 đến nay của tỉnh l&agrave; 24.753 trường hợp, trong đ&oacute; số đang điều trị l&agrave; 5.284 ca. Tuy nhi&ecirc;n lũy kế số tử vong l&agrave; 468 bệnh nh&acirc;n (chiếm 1,89%), 75% bệnh nh&acirc;n tử vong chưa được ti&ecirc;m vaccine. To&agrave;n tỉnh c&oacute; 13 cơ sở thu dung điều trị với 4.570 giường bệnh. Người bệnh COVID-19 nặng v&agrave; nguy kịch được điều trị tại 4 bệnh viện tuyến tỉnh l&agrave; BVĐK&nbsp;Trung t&acirc;m An Giang, BVĐK khu vực tỉnh, BVĐK khu vực T&acirc;n Ch&acirc;u v&agrave; BV Sản Nhi.</p>\r\n\r\n<p>B&aacute;o c&aacute;o của T&acirc;y Ninh cho biết, đến ng&agrave;y 6/12/2021, tỉnh n&agrave;y ghi nhận 49.639 ca mắc COVID-19, đang điều trị 14.838 ca, trong số đ&oacute; c&oacute; 173 bệnh nh&acirc;n nặng, nguy kịch đang điều trị tại tầng 3;</p>\r\n\r\n<p>Tại S&oacute;c Trăng đến ng&agrave;y 6/12/2021&nbsp;ghi nhận 21.835 ca mắc COVID-19; cộng dồn 127 tử vong, trong số đ&oacute; c&oacute; 76% người chưa ti&ecirc;m vaccine ph&ograve;ng COVID-19;</p>\r\n\r\n<p>Tỉnh B&agrave; Rịa- Vũng T&agrave;u cho biết, hiện c&oacute; 3.766 ca COVID-19 đang điều trị tại c&aacute;c cơ sở thu dung, điều trị tr&ecirc;n địa b&agrave;n; 3.813 trường hợp F0 đang quản l&yacute;, theo d&otilde;i v&agrave; c&aacute;ch ly tại nh&agrave;. Đ&aacute;nh gi&aacute; về cấp độ dịch của tỉnh cho thấy hiện c&oacute; 7 đơn vị ở cấp độ 4; c&oacute; 33 đơn vị ở cấp độ 3.</p>\r\n\r\n<p>B&aacute;o c&aacute;o của 5 địa phương n&agrave;y đều cho biết, hiện tỷ lệ ti&ecirc;m vaccine ph&ograve;ng COVID-19 mũi 1 rất cao đều tr&ecirc;n 98%; mũi 2 tr&ecirc;n 80%. C&aacute;c tỉnh n&agrave;y cũng đ&atilde; ho&agrave;n th&agrave;nh ti&ecirc;m vaccine mũi 1 cho trẻ trong độ tuổi từ 12-17; đang triển khai ti&ecirc;m mũi 2.</p>\r\n\r\n<p>L&atilde;nh đạo ng&agrave;nh Y tế c&aacute;c địa phương tr&ecirc;n cũng th&ocirc;ng tin đang đẩy nhanh tiến độ ti&ecirc;m mũi 2, ti&ecirc;m v&eacute;t c&aacute;c trường hợp thuộc đối tượng ti&ecirc;m nhưng tr&igrave; ho&atilde;n.</p>\r\n\r\n<p>Tại cuộc họp c&aacute;c địa phương đề xuất Bộ Y tế chi viện th&ecirc;m nh&acirc;n lực từ c&aacute;c bệnh viện&nbsp;Trung ương để hỗ trợ c&ocirc;ng t&aacute;c điều trị; cấp th&ecirc;m vaccine để ti&ecirc;m mũi bổ sung v&agrave; thuốc kh&aacute;ng virus phục vụ điều trị F0 tại nh&agrave; c&oacute; kiểm so&aacute;t; hỗ trợ m&aacute;y thở&hellip;</p>\r\n\r\n<p>Về đề xuất tăng cường nh&acirc;n lực, Bộ trưởng Nguyễn Thanh Long y&ecirc;u cầu Cục Quản l&yacute; Kh&aacute;m chữa bệnh r&agrave; so&aacute;t ngay việc điều động nh&acirc;n lực từ c&aacute;c BV tuyến&nbsp;Trung ương theo Quyết định số 5500/QĐ-BYT của Bộ trưởng Bộ Y tế k&yacute; ban h&agrave;nh ng&agrave;y 30/11/2021 về việc ph&acirc;n c&ocirc;ng c&aacute;c BV tuyến tr&ecirc;n trực tiếp hỗ trợ chuy&ecirc;n m&ocirc;n trong quản l&yacute;, điều trị COVID-19 tại TP HCM v&agrave; 10 tỉnh ph&iacute;a Nam.</p>\r\n\r\n<p>Bộ trưởng y&ecirc;u cầu c&aacute;c bệnh viện trong danh s&aacute;ch ph&acirc;n c&ocirc;ng phải nhanh ch&oacute;ng đưa th&ecirc;m nh&acirc;n lực v&agrave;o c&aacute;c tỉnh n&agrave;y để đảm bảo phối hợp chặt chẽ với địa phương trong c&ocirc;ng t&aacute;c ph&ograve;ng,&nbsp;chống dịch. Bệnh viện Bạch Mai, trong ng&agrave;y mai (7/12/2021) phải cử th&ecirc;m 1 đo&agrave;n c&aacute;n bộ y tế nữa đến An Giang; BV Việt Đức v&agrave;o hỗ trợ B&agrave; Rịa- Vũng T&agrave;u; Bệnh viện E v&agrave;o hỗ trợ T&acirc;y Ninh, Bệnh viện Nội tiết Trung ương v&agrave;o hỗ trợ tỉnh S&oacute;c Trăng.</p>\r\n\r\n<p>Ri&ecirc;ng TP. Cần Thơ, Bộ trưởng Nguyễn Thanh Long y&ecirc;u cầu Bệnh viện Đa khoa Trung ương Cần Thơ tiếp tục hỗ trợ th&agrave;nh phố trong c&ocirc;ng t&aacute;c điều trị.</p>\r\n\r\n<p>Bộ trưởng chỉ đạo c&aacute;c Bệnh viện tuyến Trung ương phải cử chuy&ecirc;n gia hồi sức c&oacute; kinh nghiệm đến c&aacute;c tỉnh để hỗ trợ điều trị, đồng thời ch&uacute; trọng triển khai tập huấn, n&acirc;ng cao năng lực điều trị cho y b&aacute;c sĩ tại chỗ.</p>\r\n\r\n<p><strong><em>R&agrave; so&aacute;t ti&ecirc;m vaccine ph&ograve;ng COVID-19 cho người cao tuổi, c&oacute; bệnh nền</em></strong></p>\r\n\r\n<p>Tại cuộc họp, Bộ trưởng Nguyễn Thanh Long nhấn mạnh: &ldquo;Thực tế cho thấy ch&uacute;ng ta sẽ tiếp tục phải đối mặt với t&igrave;nh trạng gia tăng ca nhiễm COVID-19 v&igrave; tại nhiều địa phương vẫn c&ograve;n t&igrave;nh trạng người d&acirc;n kh&ocirc;ng thực hiện nghi&ecirc;m c&aacute;c khuyến c&aacute;o của ng&agrave;nh Y tế về ph&ograve;ng, chống dịch, lơ l&agrave;, chủ quan... Khi số ca mắc gia tăng, đương nhi&ecirc;n bệnh nh&acirc;n nặng sẽ tăng v&agrave; con số tử vong cũng sẽ c&oacute; thể tăng. Do vậy cần nỗ lực để giảm số ca tử vong&rdquo;</p>\r\n\r\n<p>Bộ trưởng Bộ Y tế cũng lưu &yacute; c&aacute;c địa phương v&igrave; số ca nhiễm tăng n&ecirc;n trong qu&aacute; tr&igrave;nh triển khai Nghị quyết 128, đối với những nơi thuộc cấp độ dịch 3 v&agrave; 4 phải thực hiện nghi&ecirc;m, triệt để c&aacute;c biện ph&aacute;p ph&ograve;ng,&nbsp;chống dịch, nhất l&agrave; c&aacute;c khu vực thuộc cấp độ 4. &ldquo;C&oacute; như thế ch&uacute;ng ta mới kiểm so&aacute;t được số mắc&rdquo;- Bộ trưởng n&oacute;i.</p>\r\n\r\n<p>Về c&ocirc;ng t&aacute;c ti&ecirc;m vaccine ph&ograve;ng COVID-19, Bộ Y tế sẽ tiếp tục ph&acirc;n bổ vaccine phục vụ nhu cầu ti&ecirc;m chủng của c&aacute;c địa phương, tuy nhi&ecirc;n Bộ trưởng Nguyễn Thanh Long nhắc c&aacute;c tỉnh, th&agrave;nh phố phải thực hiện chiến dịch &ldquo;đi từng ng&otilde;, g&otilde; từng nh&agrave;&rdquo; lập danh s&aacute;ch tất cả những người cao tuổi, người c&oacute; bệnh l&yacute; nền chưa ti&ecirc;m vaccine để ti&ecirc;m chủng cho nh&oacute;m đối tượng n&agrave;y.</p>\r\n\r\n<p>Nhấn mạnh nhiệm vụ n&agrave;y kh&ocirc;ng chỉ của ri&ecirc;ng ng&agrave;nh&nbsp;Y&nbsp;tế, l&atilde;nh đạo Bộ Y tế đề nghị c&aacute;c đồng ch&iacute; B&iacute; thư Th&agrave;nh uỷ, Tỉnh uỷ, Chủ tịch UBND c&aacute;c địa phương huy động cả hệ thống ch&iacute;nh trị cấp cơ sở r&agrave; so&aacute;t những người c&oacute; nguy cơ cao nhưng chưa ti&ecirc;m để ng&agrave;nh Y tế triển khai ti&ecirc;m. &ldquo;C&oacute; thể tổ chức c&aacute;c điểm ti&ecirc;m lưu động, đến ti&ecirc;m tại nh&agrave; cho c&aacute;c trường hợp nguy cơ cao để bảo vệ họ khỏi nguy cơ bị diễn biến nặng n&ecirc;u mắc COVID-19&rdquo;- Bộ trưởng Nguyễn Thanh Long b&agrave;y tỏ.</p>\r\n\r\n<p><strong><em>Quản l&yacute; chặt chẽ bệnh nh&acirc;n COVID-19, chuyển tuyến kịp thời</em></strong></p>\r\n\r\n<p>Trong c&ocirc;ng t&aacute;c điều trị, cần ph&acirc;n loại bệnh nh&acirc;n, người c&oacute; nguy cơ, tu&acirc;n thủ điều trị theo th&aacute;p 3 tầng, c&oacute; sự li&ecirc;n th&ocirc;ng chặt chẽ với nhau giữa c&aacute;c tầng, c&oacute; khoảng giữa tầng 1 l&agrave; 1+, tầng 2 l&agrave; 2+ v&agrave; tầng để quản l&yacute;, gi&aacute;m s&aacute;t chặt chẽ ca bệnh, chuyển tuyến kịp thời.</p>\r\n\r\n<p>Cũng về điều trị, một vấn đề được GS.TS Nguyễn Thanh Long lưu &yacute; c&aacute;c địa phương l&agrave; quản l&yacute;, theo d&otilde;i v&agrave; chăm s&oacute;c F0 tại nh&agrave; phải chặt chẽ, khoa học v&agrave; lu&ocirc;n đảm bảo &ldquo;y tế phải gần d&acirc;n nhất&rdquo; th&ocirc;ng qua việc thiết lập c&aacute;c trạm y tế, tổ y tế lưu động. Mỗi x&atilde;, phường c&oacute; thể c&oacute; nhiều trạm y tế, tổ y tế lưu động để quản l&yacute; chặt chẽ danh s&aacute;ch c&aacute;c ca bệnh nguy cơ cao nhằm sẵn s&agrave;ng chuyển tuyến kịp thời.</p>', 'http://127.0.0.1:8000/imageupload/335efb0e0a352e851313cd867f717534-news.jpg', '2021-12-06 18:42:33', '2021-12-06 23:28:47');
+=======
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
+(2, 'Ca cộng đồng tăng, Hà Nội yêu cầu xét nghiệm tầm soát cho học sinh', '<h2>Chủ tịch H&agrave; Nội y&ecirc;u cầu Sở Y tế x&acirc;y dựng kế hoạch x&eacute;t nghiệm tầm so&aacute;t cho học sinh, gi&aacute;o vi&ecirc;n; x&eacute;t nghiệm thường quy, s&agrave;ng lọc theo chỉ định chuy&ecirc;n m&ocirc;n, định kỳ tại c&aacute;c khu vực nguy cơ mắc COVID cao.</h2>\r\n\r\n<p>Ng&agrave;y 26/11, Chủ tịch Ủy ban Nh&acirc;n d&acirc;n th&agrave;nh phố H&agrave; Nội Chu Ngọc Anh đ&atilde; k&yacute; ban h&agrave;nh C&ocirc;ng điện số 25/CĐ-UBND về việc tăng cường c&aacute;c biện ph&aacute;p ph&ograve;ng, chống&nbsp;<a href=\"https://www.vietnamplus.vn/tags/d%e1%bb%8bch-COVID-19.vnp\" target=\"_blank\"><strong>dịch COVID-19</strong></a>&nbsp;trong t&igrave;nh h&igrave;nh mới.</p>\r\n\r\n<p><strong>COVID-19 đ&atilde; xuất hiện tr&ecirc;n 30/30 quận, huyện</strong></p>\r\n\r\n<p>C&ocirc;ng điện&nbsp;của H&agrave; Nội n&ecirc;u r&otilde; từ ng&agrave;y 11/10/2021 đến ng&agrave;y 25/11/2021, th&agrave;nh phố đ&atilde; ghi nhận 4.817 ca mắc COVID-19. Trong đ&oacute;, số ca cộng đồng tăng nhanh với 1.704 ca mắc (chiếm tỷ lệ 35,43%), số ca mắc do l&acirc;y nhiễm thứ ph&aacute;t cũng tăng.</p>\r\n\r\n<p>Tới nay, dịch bệnh xuất hiện tr&ecirc;n 30/30 quận, huyện, thị x&atilde; trong đ&oacute; nhiều ch&ugrave;m ca bệnh tại c&aacute;c khu d&acirc;n cư mật độ cao, c&aacute;c khu chung cư, khu c&ocirc;ng nghiệp, từ c&aacute;c hoạt động tại chợ d&acirc;n sinh, đ&aacute;m hiếu, hỷ, việc tụ tập ăn uống, c&aacute;c địa điểm c&ocirc;ng cộng v&agrave; sự kiện tập trung đ&ocirc;ng người.</p>\r\n\r\n<p>Theo đ&oacute;, Chủ tịch th&agrave;nh phố y&ecirc;u cầu Trưởng ban Chỉ đạo, Chủ tịch Ủy ban Nh&acirc;n d&acirc;n c&aacute;c quận, huyện, thị x&atilde; chỉ đạo c&aacute;c lực lượng chức năng tại cơ sở tăng cường r&agrave; so&aacute;t, kiểm tra, tuy&ecirc;n truyền c&ocirc;ng t&aacute;c thực hiện c&aacute;c biện ph&aacute;p ph&ograve;ng, chống dịch tại c&aacute;c khu vực c&oacute; nguy cơ cao tr&ecirc;n địa b&agrave;n, như: C&aacute;c khu d&acirc;n cư (mật độ đ&ocirc;ng, sử dụng chung nh&agrave; tắm, khu vệ sinh); chợ d&acirc;n sinh; trung t&acirc;m thương mại; nh&agrave; h&agrave;ng ăn uống, bến t&agrave;u bến xe, t&agrave;u điện tr&ecirc;n cao, c&aacute;c cơ sở kh&aacute;m, chữa bệnh v&agrave; c&aacute;c khu vực c&oacute; sự kiện tập trung đ&ocirc;ng người.</p>\r\n\r\n<p>C&ugrave;ng với đ&oacute;, kiểm tra việc chấp h&agrave;nh c&aacute;c quy định, điều kiện ph&ograve;ng, chống dịch theo quy định của Trung ương v&agrave; th&agrave;nh phố (th&ocirc;ng điệp &quot;5K&quot; v&agrave; c&aacute;c biện ph&aacute;p theo Kế hoạch số 243/KH-UBND, c&aacute;c c&ocirc;ng điện, văn bản chỉ đạo của th&agrave;nh phố.)</p>\r\n\r\n<p>L&atilde;nh đạo H&agrave; Nội y&ecirc;u cầu khẩn trương ho&agrave;n thiện v&agrave; đưa v&agrave;o hoạt động c&aacute;c cơ sở thu dung, điều trị người nhiễm SARS-CoV-2 kh&ocirc;ng triệu chứng, triệu chứng nhẹ theo m&ocirc; h&igrave;nh Trạm Y tế lưu động; đồng thời đẩy nhanh tiến độ ti&ecirc;m vaccine, đặc biệt l&agrave; ti&ecirc;m mũi 2 với người tr&ecirc;n 50 tuổi.</p>\r\n\r\n<p>&ldquo;Tiếp tục thực hiện kế hoạch ti&ecirc;m cho trẻ em từ 12-17 tuổi theo lộ tr&igrave;nh hạ dần độ tuổi theo hướng dẫn của Bộ Y tế; bảo đảm về thuốc điều trị, trang thiết bị y tế,&rdquo; c&ocirc;ng điện nhấn mạnh.</p>\r\n\r\n<p>Về khoanh v&ugrave;ng, Chủ tịch Chu Ngọc Anh y&ecirc;u cầu c&aacute;ch ly được thực hiện tr&ecirc;n phạm vị hẹp nhất c&oacute; thể, tiếp tục th&ocirc;ng điệp &quot;5K&quot; v&agrave; đề cao &yacute; thức ph&ograve;ng, chống dịch của người d&acirc;n. Thực hiện nới lỏng, kh&ocirc;i phục hoạt động sản xuất-kinh doanh, mở cửa lại nền kinh tế c&oacute; lộ tr&igrave;nh v&agrave; ở những nơi an to&agrave;n, c&oacute; đủ điều kiện.</p>\r\n\r\n<p><strong>Tăng cường nh&acirc;n lực hỗ trợ y tế phường</strong></p>\r\n\r\n<p>&Ocirc;ng Chu Ngọc Anh cũng y&ecirc;u cầu Sở Y tế chủ tr&igrave;, tăng cường điều phối, bố tr&iacute;, ph&acirc;n luồng, chỉ đạo Trung t&acirc;m Kiểm so&aacute;t bệnh tật th&agrave;nh phố, c&aacute;c bệnh viện, viện, c&aacute;c trung t&acirc;m y tế quận, huyện, thị x&atilde; trong c&ocirc;ng t&aacute;c phối hợp, lấy mẫu, thực hiện x&eacute;t nghiệm tương ứng với c&aacute;c khu vực, địa b&agrave;n, đảm bảo thời gian trả kết quả x&eacute;t nghiệm.</p>\r\n\r\n<p>C&ugrave;ng đ&oacute;, x&acirc;y dựng kế hoạch x&eacute;t nghiệm tầm so&aacute;t cho học sinh v&agrave; gi&aacute;o vi&ecirc;n; x&eacute;t nghiệm thường quy, s&agrave;ng lọc theo chỉ định chuy&ecirc;n m&ocirc;n, tầm so&aacute;t ngẫu nhi&ecirc;n, định kỳ tại c&aacute;c khu vực c&oacute; nguy cơ cao, tập trung đ&ocirc;ng người, để hạn chế tối đa việc ph&aacute;t sinh c&aacute;c ch&ugrave;m ca bệnh phức tạp trong cộng đồng.</p>\r\n\r\n<p>Sở Y tế tổng hợp, ph&acirc;n loại c&aacute;c trường hợp F1, F2, đ&aacute;nh gi&aacute; ph&acirc;n t&iacute;ch c&aacute;c nguy cơ trong một số trường hợp theo đặc th&ugrave; của những đ&ocirc; thị lớn (như với c&aacute;c trường hợp đ&atilde; ti&ecirc;m đủ liều vaccine, c&oacute; đeo khẩu trang, đứng trong c&ugrave;ng khoang thang m&aacute;y với người nhiễm SARS-CoV-2 trong thời gian ngắn), đề nghị Bộ Y tế hướng dẫn, chỉ đạo c&aacute;c biện ph&aacute;p y tế ph&ugrave; hợp quy định v&agrave; diễn biến dịch tễ.</p>\r\n\r\n<p>&ldquo;Sở chủ tr&igrave;, chỉ đạo tăng cường việc cung cấp bảo đảm t&uacute;i thuốc g&oacute;i thuốc C (thuốc kh&aacute;ng vi r&uacute;t) cho c&aacute;c bệnh nh&acirc;n tại c&aacute;c tầng điều trị,&rdquo; l&atilde;nh đạo th&agrave;nh phố lưu &yacute; th&ecirc;m.</p>\r\n\r\n<p><strong>L</strong><strong>ắp đặt c&aacute;c thiết bị qu&eacute;t m&atilde; QR tại khu vực c&ocirc;ng cộng</strong></p>\r\n\r\n<p>Tại c&ocirc;ng điện, Chủ tịch H&agrave; Nội giao C&ocirc;ng an th&agrave;nh phố tăng cường cập nhật, kiểm so&aacute;t th&ocirc;ng tin nh&acirc;n khẩu tr&ecirc;n địa b&agrave;n; quản l&yacute; chặt chẽ số người thường tr&uacute;, tạm tr&uacute;, r&agrave; so&aacute;t hộ khẩu, người được cấp căn cước c&ocirc;ng d&acirc;n gắn chip, quản l&yacute; m&atilde; số định danh c&aacute; nh&acirc;n&hellip;</p>\r\n\r\n<p>Tăng cường kiểm so&aacute;t chặt chẽ di biến động d&acirc;n cư, nắm chắc t&igrave;nh h&igrave;nh người d&acirc;n khi ra, v&agrave;o địa b&agrave;n, người c&oacute; nguy cơ đang lưu tr&uacute;, l&agrave;m việc tại địa phương, doanh nghiệp (như l&aacute;i xe, phụ xe đường d&agrave;i, li&ecirc;n tỉnh, người l&agrave;m việc ngo&agrave;i tỉnh về địa phương lưu tr&uacute;, người lưu tr&uacute; ngoại tỉnh về địa phương l&agrave;m việc...) để c&oacute; biện ph&aacute;p quản l&yacute; ph&ugrave; hợp, khai b&aacute;o y tế thường xuy&ecirc;n.</p>', 'http://127.0.0.1:8000/imageupload/1638000669-Ca cộng đồng tăng, Hà Nội yêu cầu xét nghiệm tầm soát cho học sinh.jpg', '2021-11-27 01:11:09', '2021-11-27 01:11:09');
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `oauth_access_tokens`
+=======
+-- Table structure for table `oauth_access_tokens`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `oauth_access_tokens` (
@@ -238,13 +312,20 @@ CREATE TABLE `oauth_access_tokens` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `oauth_access_tokens`
+=======
+-- Dumping data for table `oauth_access_tokens`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 INSERT INTO `oauth_access_tokens` (`id`, `user_id`, `client_id`, `name`, `scopes`, `revoked`, `created_at`, `updated_at`, `expires_at`) VALUES
 ('2d8bd5150cb3cdb05ad6cb3c0ec9e1b6075875fcb9f037d56673e9e779171271db3d782387f0ec7c', 1, 1, 'App', '[]', 0, '2021-11-26 23:48:20', '2021-11-26 23:48:20', '2022-11-27 06:48:20'),
 ('66a10894c6c470e13ffc374c20ace64f2f6f4269447d1d1e094f052ebc73642168fafe2a22ba17c3', 1, 1, 'App', '[]', 0, '2021-12-01 19:21:23', '2021-12-01 19:21:23', '2022-12-02 02:21:23'),
+<<<<<<< HEAD
 ('8fc450690b51fee593688561d2a08cd345f3298d70f1418f3f6e1c72cc235807f1d0db409defea00', 1, 1, 'App', '[]', 0, '2021-12-05 02:32:29', '2021-12-05 02:32:29', '2022-12-05 09:32:29'),
+=======
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 ('9e8aebb27301fd3b4056e1ed1bdd5429b372c12bcc8d7c05aea0f785133b41fc4f618669f80ab3e4', 1, 1, 'App', '[]', 0, '2021-11-28 20:10:16', '2021-11-28 20:10:16', '2022-11-29 03:10:16'),
 ('b9da55aff2adb99e05b61e6ccf1700c8a5f1f951bcdd36a5b3f1ac587fadd3bd876336dac89aaf2c', 1, 1, 'App', '[]', 0, '2021-11-30 23:49:11', '2021-11-30 23:49:11', '2022-12-01 06:49:11'),
 ('c3c023bda4e9f5fb3cb7b93cff66a7425bee75943884fa2c41e0bbbb891fd771c1a03e3092114aa1', 1, 1, 'App', '[]', 0, '2021-12-01 01:31:22', '2021-12-01 01:31:22', '2022-12-01 08:31:22'),
@@ -254,7 +335,11 @@ INSERT INTO `oauth_access_tokens` (`id`, `user_id`, `client_id`, `name`, `scopes
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `oauth_auth_codes`
+=======
+-- Table structure for table `oauth_auth_codes`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `oauth_auth_codes` (
@@ -269,7 +354,11 @@ CREATE TABLE `oauth_auth_codes` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `oauth_clients`
+=======
+-- Table structure for table `oauth_clients`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `oauth_clients` (
@@ -287,7 +376,11 @@ CREATE TABLE `oauth_clients` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `oauth_clients`
+=======
+-- Dumping data for table `oauth_clients`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 INSERT INTO `oauth_clients` (`id`, `user_id`, `name`, `secret`, `provider`, `redirect`, `personal_access_client`, `password_client`, `revoked`, `created_at`, `updated_at`) VALUES
@@ -297,7 +390,11 @@ INSERT INTO `oauth_clients` (`id`, `user_id`, `name`, `secret`, `provider`, `red
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `oauth_personal_access_clients`
+=======
+-- Table structure for table `oauth_personal_access_clients`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `oauth_personal_access_clients` (
@@ -308,7 +405,11 @@ CREATE TABLE `oauth_personal_access_clients` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `oauth_personal_access_clients`
+=======
+-- Dumping data for table `oauth_personal_access_clients`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 INSERT INTO `oauth_personal_access_clients` (`id`, `client_id`, `created_at`, `updated_at`) VALUES
@@ -317,7 +418,11 @@ INSERT INTO `oauth_personal_access_clients` (`id`, `client_id`, `created_at`, `u
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `oauth_refresh_tokens`
+=======
+-- Table structure for table `oauth_refresh_tokens`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `oauth_refresh_tokens` (
@@ -330,7 +435,11 @@ CREATE TABLE `oauth_refresh_tokens` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `orders`
+=======
+-- Table structure for table `orders`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `orders` (
@@ -345,13 +454,18 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `orders`
+=======
+-- Dumping data for table `orders`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 INSERT INTO `orders` (`id`, `code`, `date`, `pay`, `total`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'afe4649e', '2021-11-27 07:54:17', 'online', '480000', 'Đã Xác Nhận/ Đang Giao', '2021-11-27 00:54:17', '2021-11-27 20:02:59'),
 (2, 'adac55c9', '2021-11-27 08:02:42', 'online', '960000', 'Đã Xác Nhận/ Đang Giao', '2021-11-27 01:02:42', '2021-11-27 01:34:08'),
 (3, '0a61080f', '2021-11-27 08:12:37', 'online', '1920000', 'Đã Xác Nhận/ Đang Giao', '2021-11-27 01:12:37', '2021-11-27 01:33:44'),
+<<<<<<< HEAD
 (4, 'e38a9c2c', '2021-11-27 12:41:12', 'offline', '960000', 'Đã Xác Nhận/ Đang Giao', '2021-11-27 05:41:12', '2021-12-05 20:42:55'),
 (5, 'ff31e8f2', '2021-11-27 12:41:50', 'online', '960000', 'Đơn Hàng Bị Hủy', '2021-11-27 05:41:50', '2021-11-27 06:06:06'),
 (6, '946e9576', '2021-11-27 13:21:49', 'offline', '480000', 'Đã Xác Nhận/ Đang Giao', '2021-11-27 06:21:49', '2021-12-05 20:43:05'),
@@ -364,11 +478,25 @@ INSERT INTO `orders` (`id`, `code`, `date`, `pay`, `total`, `status`, `created_a
 (14, 'dc6ba948', '2021-12-05 14:46:18', 'offline', '749000', 'Hoàn Thành', '2021-12-05 07:46:18', '2021-12-05 22:29:26'),
 (15, '8661d41c', '2021-12-05 14:46:57', 'online', '749000', 'Đã thanh toán', '2021-12-05 07:46:57', '2021-12-05 07:46:59'),
 (27, '2b7c273c', '2021-12-06 03:35:09', 'offline', '1079000', 'Chờ Xử Lý', '2021-12-05 20:35:09', '2021-12-05 20:35:09');
+=======
+(4, 'e38a9c2c', '2021-11-27 12:41:12', 'offline', '960000', 'Chờ Xử Lý', '2021-11-27 05:41:12', '2021-11-27 05:41:12'),
+(5, 'ff31e8f2', '2021-11-27 12:41:50', 'online', '960000', 'Đơn Hàng Bị Hủy', '2021-11-27 05:41:50', '2021-11-27 06:06:06'),
+(6, '946e9576', '2021-11-27 13:21:49', 'offline', '480000', 'Chờ Xử Lý', '2021-11-27 06:21:49', '2021-11-27 06:21:49'),
+(7, '9a8545c3', '2021-11-28 06:19:13', 'online', '1140000', 'Chờ Xử Lý', '2021-11-27 23:19:13', '2021-11-27 23:19:13'),
+(8, '2f996581', '2021-11-29 02:45:11', 'online', '0', 'Chờ Xử Lý', '2021-11-28 19:45:11', '2021-11-28 19:45:11'),
+(9, 'dc0fdb33', '2021-12-02 02:23:15', 'online', '798000', 'Đã thanh toán', '2021-12-01 19:23:15', '2021-12-01 19:23:26'),
+(10, 'da9491fd', '2021-12-02 02:24:06', 'offline', '480000', 'Chờ Xử Lý', '2021-12-01 19:24:06', '2021-12-01 19:24:06'),
+(11, '0f4fef7e', '2021-12-02 02:25:18', 'offline', '1440000', 'Chờ Xử Lý', '2021-12-01 19:25:18', '2021-12-01 19:25:18');
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `order_details`
+=======
+-- Table structure for table `order_details`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `order_details` (
@@ -389,7 +517,11 @@ CREATE TABLE `order_details` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `order_details`
+=======
+-- Dumping data for table `order_details`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 INSERT INTO `order_details` (`id`, `order_code`, `product_id`, `product_name`, `product_quantity`, `user_fullname`, `user_email`, `user_phonenumber`, `user_address`, `user_address2`, `order_status`, `order_pay`, `created_at`, `updated_at`) VALUES
@@ -397,6 +529,7 @@ INSERT INTO `order_details` (`id`, `order_code`, `product_id`, `product_name`, `
 (2, 'adac55c9', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '2', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Đã Xác Nhận/ Đang Giao', 'online', '2021-11-27 01:02:42', '2021-11-27 01:34:08'),
 (3, '0a61080f', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '3', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Đã Xác Nhận/ Đang Giao', 'online', '2021-11-27 01:12:37', '2021-11-27 01:33:44'),
 (4, '0a61080f', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '1', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Đã Xác Nhận/ Đang Giao', 'online', '2021-11-27 01:12:37', '2021-11-27 01:33:44'),
+<<<<<<< HEAD
 (5, 'e38a9c2c', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '2', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Đã Xác Nhận/ Đang Giao', 'offline', '2021-11-27 05:41:12', '2021-12-05 20:42:55'),
 (6, 'ff31e8f2', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '2', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Đơn Hàng Bị Hủy', 'online', '2021-11-27 05:41:50', '2021-11-27 06:06:06'),
 (7, '946e9576', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '1', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Đã Xác Nhận/ Đang Giao', 'offline', '2021-11-27 06:21:49', '2021-12-05 20:43:05'),
@@ -412,11 +545,26 @@ INSERT INTO `order_details` (`id`, `order_code`, `product_id`, `product_name`, `
 (17, '8661d41c', 4, 'Khoan giác mạc chân không CORONET– Hãng Network Medical, Anh', '1', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', '470, trần đại nghĩa, quận ngữ hành sơn, đà nẵng', NULL, 'Đã thanh toán', 'online', '2021-12-05 07:46:57', '2021-12-05 07:46:59'),
 (32, '2b7c273c', 3, 'Dung dịch bảo quản giác mạc hãng Alchimia, Italia', '1', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', '470, trần đại nghĩa, quận ngữ hành sơn, đà nẵng', NULL, 'Chờ Xử lý', 'offline', '2021-12-05 20:35:09', '2021-12-05 20:35:09'),
 (33, '2b7c273c', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '1', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', '470, trần đại nghĩa, quận ngữ hành sơn, đà nẵng', NULL, 'Chờ Xử lý', 'offline', '2021-12-05 20:35:09', '2021-12-05 20:35:09');
+=======
+(5, 'e38a9c2c', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '2', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Chờ Xử lý', 'offline', '2021-11-27 05:41:12', '2021-11-27 05:41:12'),
+(6, 'ff31e8f2', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '2', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Đơn Hàng Bị Hủy', 'online', '2021-11-27 05:41:50', '2021-11-27 06:06:06'),
+(7, '946e9576', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '1', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Chờ Xử lý', 'offline', '2021-11-27 06:21:49', '2021-11-27 06:21:49'),
+(8, '9a8545c3', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '2', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Chờ Xử lý', 'online', '2021-11-27 23:19:13', '2021-11-27 23:19:13'),
+(9, '9a8545c3', 5, 'Bút đánh dấu vết mổ Twin Tip', '1', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Chờ Xử lý', 'online', '2021-11-27 23:19:13', '2021-11-27 23:19:13'),
+(10, 'dc0fdb33', 2, 'Nút lệ tự tiêu collagen VeraC7 điều trị khô mắt – Hãng Lacrivera, Mỹ', '2', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Đã thanh toán', 'online', '2021-12-01 19:23:15', '2021-12-01 19:23:26'),
+(11, 'da9491fd', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '1', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Chờ Xử lý', 'offline', '2021-12-01 19:24:06', '2021-12-01 19:24:06'),
+(12, '0f4fef7e', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '2', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Chờ Xử lý', 'offline', '2021-12-01 19:25:18', '2021-12-01 19:25:18'),
+(13, '0f4fef7e', 1, 'Máy trợ thính bỏ túi có dây Biohealth JH-238', '1', 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', '0345648638', 'Đà Nẵng', NULL, 'Chờ Xử lý', 'offline', '2021-12-01 19:25:18', '2021-12-01 19:25:18');
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `password_resets`
+=======
+-- Table structure for table `password_resets`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `password_resets` (
@@ -428,7 +576,11 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `personal_access_tokens`
+=======
+-- Table structure for table `personal_access_tokens`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `personal_access_tokens` (
@@ -446,7 +598,11 @@ CREATE TABLE `personal_access_tokens` (
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `products`
+=======
+-- Table structure for table `products`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `products` (
@@ -463,7 +619,11 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `products`
+=======
+-- Dumping data for table `products`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 INSERT INTO `products` (`product_id`, `product_name`, `product_description`, `product_image`, `product_price`, `product_origin`, `product_manufacturer`, `product_discount`, `created_at`, `updated_at`) VALUES
@@ -474,6 +634,7 @@ INSERT INTO `products` (`product_id`, `product_name`, `product_description`, `pr
 (5, 'Bút đánh dấu vết mổ Twin Tip', '<p><strong>B&uacute;t đ&aacute;nh dấu vết mổ 2 đầu, một đầu thường, một đầu si&ecirc;u nhỏ d&ograve;ng Twin Tip #1425SR-100 rất hiệu quả v&agrave; linh hoạt, th&iacute;ch hợp đa dạng với nhiều loại phẫu thu&acirc;t, bao gồm cả c&aacute;c phẫu thuật ch&iacute;nh x&aacute;c m&agrave;&nbsp;cần đ&aacute;nh dấu với n&eacute;t si&ecirc;u nhỏ.</strong></p>', 'http://127.0.0.1:8000/imageupload/1638065296-Bút đánh dấu vết mổ Twin Tip.jpg', 180000, 'Mỹ', 'Viscot', 500, '2021-11-27 19:08:16', '2021-11-27 19:08:16'),
 (6, 'Chỉ phẫu thuật Vicryl 4-0 (tam giác) W9580T', '<p>Chỉ kh&ocirc;ng tan tự nhi&ecirc;n đa sợi bện, l&agrave;m từ một dạng protein hữu cơ &ndash; sợi tơ tằm Bombyx Mori. Chỉ được phủ một lớp s&aacute;p (wax). Chỉ được nhuộm m&agrave;u đen (Black Logwood), cỡ chỉ 10/0 &ndash; 2</p>', 'http://127.0.0.1:8000/imageupload/1638065499-Chỉ phẫu thuật Vicryl 4-0 (tam giác) W9580T.jpg', 89000, 'Bỉ', 'Johnson & Johnson', 200, '2021-11-27 19:11:39', '2021-11-27 19:11:39'),
 (8, 'Máy đo nồng độ oxy trong máu SPO2 Wellmed FS20F', '<ul>\r\n	<li>M&aacute;y đo nồng độ oxy trong m&aacute;u<strong>&nbsp;Wellmed FS20F</strong>&nbsp;l&agrave; sản phẩm chuy&ecirc;n d&ugrave;ng để theo d&otilde;i độ b&atilde;o h&ograve;a oxy trong m&aacute;u (SPO2) v&agrave; nhịp tim.&nbsp;</li>\r\n	<li>Đ&acirc;y l&agrave; sản phẩm đến từ thương hiệu Wellmed - Chuy&ecirc;n sản xuất c&aacute;c thương hiệu thiết bị y tế v&agrave; chăm s&oacute;c sức khỏe đạt &quot;Ti&ecirc;u chuẩn an to&agrave;n hiệu suất: YY 0670 / IEC 60601-2-30&hellip;&nbsp;</li>\r\n	<li>Sản phẩm c&oacute; k&iacute;ch thước nhỏ gọn, kh&ocirc;ng x&acirc;m lấn n&ecirc;n rất tiện lợi d&ugrave;ng cho cả trẻ nhỏ v&agrave; người trưởng th&agrave;nh.</li>\r\n</ul>', 'http://127.0.0.1:8000/imageupload/1638425573-Máy đo nồng độ oxy trong máu SPO2 Wellmed FS20F.jpg', 990000, 'China', 'Wellmed', 200, '2021-12-01 23:12:53', '2021-12-01 23:12:53'),
+<<<<<<< HEAD
 (9, 'Mặt nạ mũi Nasal mask NM-002-TM', '<p>Mặt nạ mũi Nasal mask NM-002-TM l&agrave; mặt nạ d&agrave;nh cho m&aacute;y trợ thở. Sản phẩm ch&iacute;nh h&atilde;ng của Rescomf được thiết kế th&ocirc;ng minh, hiện đại gi&uacute;p người d&ugrave;ng c&oacute; thể sử dụng một c&aacute;ch thoải m&aacute;i trong qu&aacute; tr&igrave;nh trị liệu.</p>', 'http://127.0.0.1:8000/imageupload/1638425715-Mặt nạ mũi Nasal mask NM-002-TM.png', 999000, 'china', 'RESCOMF', 100, '2021-12-01 23:15:15', '2021-12-01 23:15:15'),
 (10, 'Máy đo huyết áp tự động Microlife B6 Advanced', '<h3><strong>M&aacute;y đo huyết &aacute;p Microlife&nbsp;tự động, cung cấp kết quả đo huyết &aacute;p, nhịp tim ch&iacute;nh x&aacute;c qua c&aacute;c c&ocirc;ng nghệ hiện đại</strong></h3>\r\n\r\n<p>- Cho ra kết quả cảnh b&aacute;o rung nhĩ (AF) chỉ qua 1 lần đo nhờ ứng dụng c&ocirc;ng nghệ AFIBsens.</p>\r\n\r\n<p>- Ngo&agrave;i ra, m&aacute;y c&ograve;n sử dụng c&ocirc;ng nghệ MAM tự động đo 3 lần để cho ra kết quả trung b&igrave;nh, c&ocirc;ng nghệ PAD ph&aacute;t hiện rối loạn nhịp tim v&agrave; c&ocirc;ng nghệ Gentle+ đo nhanh, &ecirc;m &aacute;i, thoải m&aacute;i cho người đo.</p>\r\n\r\n<p>- Tầm so&aacute;t rung nhĩ với sản phẩm n&agrave;y sẽ gi&uacute;p người tr&ecirc;n 65 tuổi hiểu r&otilde; t&igrave;nh h&igrave;nh sức khỏe, giảm nguy cơ độc quỵ. M&aacute;y cũng được khuy&ecirc;n d&ugrave;ng với người hơn 50 tuổi mắc c&aacute;c chứng đ&aacute;i th&aacute;o đường, cao huyết &aacute;p, suy mạch v&agrave;nh hoặc đ&atilde; từng trải qua cơn đột quỵ.</p>', 'http://127.0.0.1:8000/imageupload/4cf67c1dd23d22e162fbdee7dd955b90-product.jpg', 2671000, 'Trung Quốc', 'Microlife', 99, '2021-12-06 06:23:37', '2021-12-06 06:23:37'),
 (11, 'Bộ kit test covid-19 Humasis Covid-19 Ag hiệu quả tối ưu hộp 25 test', '<p>Đọc kết quả sau 15 ph&uacute;t. Kết quả c&oacute; thể bị sai nếu kết quả x&eacute;t nghiệm được đọc trước 15 ph&uacute;t hoặc sau 20 ph&uacute;t.</p>\r\n\r\n<p><strong>Lưu &yacute;:</strong></p>\r\n\r\n<p>Kết quả &acirc;m t&iacute;nh l&agrave; giả định, nếu muốn c&oacute; kết quả ch&iacute;nh x&aacute;c hơn phải thực hiện x&eacute;t nghiệm ph&acirc;n tử. X&eacute;t nghiệm n&agrave;y nhằm mục đ&iacute;ch s&agrave;ng lọc ban đầu nhiễm COVID-19 bằng c&aacute;ch ph&aacute;t hiện kh&aacute;ng nguy&ecirc;n COVID-19, nhưng kh&ocirc;ng được sử dụng l&agrave;m ti&ecirc;u ch&iacute; duy nhất để x&aacute;c định nhiễm SARS-CoV-2. C&aacute;c phương ph&aacute;p kh&aacute;c v&agrave; th&ocirc;ng tin l&acirc;m s&agrave;ng (bao gồm dấu hiệu v&agrave; triệu chứng) n&ecirc;n được sử dụng v&agrave; xem x&eacute;t để chuẩn đo&aacute;n.</p>', 'http://127.0.0.1:8000/imageupload/4a4e98f543d580509f69f22e6810d49f-product.jpg', 128000, 'Hàn Quốc', 'Humansis', 100, '2021-12-06 06:26:13', '2021-12-06 06:26:13'),
@@ -494,11 +655,18 @@ INSERT INTO `products` (`product_id`, `product_name`, `product_description`, `pr
 (26, 'Khẩu trang Ecom MED Safe Mask 4 lớp hộp 50 cái', '<p>Khẩu trang Ecom MED&nbsp;Safe Mask&nbsp;với&nbsp;4 lớp bảo vệ tối ưu&nbsp;trước sự x&acirc;m nhập của mầm bệnh qua đường h&ocirc; hấp, khả năng chống nước, kh&aacute;ng giọt bắn, lọc bụi mịn, vi khuẩn, virus v&agrave; mầm bệnh. Thun đeo&nbsp;co d&atilde;n tốt&nbsp;kh&ocirc;ng tạo cho người d&ugrave;ng cảm gi&aacute;c kh&oacute; thở v&agrave; kh&ocirc;ng g&acirc;y đau tai</p>', 'http://127.0.0.1:8000/imageupload/90257fee2f26737920984abe9d06312d-product.jpg', 40000, 'Việt Nam', 'Ecom MED (Việt Nam)', 100, '2021-12-06 18:25:14', '2021-12-06 18:25:14'),
 (27, 'Viên đặt giảm đau - hạ sốt Efferalgan Suppo. 80mg', '<p>Vi&ecirc;n đặt giảm đau - hạ sốt Efferalgan Suppo. 80mg l&agrave; dược phẩm thuộc nh&oacute;m thuốc giảm đau hạ sốt được sản xuất bởi tập đo&agrave;n dược phẩm Bristol-Myers Squibb của Mỹ. C&aacute;c sản phẩm thuộc thương hiệu Efferalgan l&agrave; một trong những t&ecirc;n tuổi nổi tiếng nhất của h&atilde;ng được tin d&ugrave;ng tr&ecirc;n khắp thế giới.</p>', 'http://127.0.0.1:8000/imageupload/236fe5eb660a21f55e81972db63e2a00-product.jpg', 24000, 'Mỹ', 'Bristol-Myers Squibb', 100, '2021-12-06 18:27:09', '2021-12-06 18:27:09'),
 (28, 'Bộ trang phục quần áo bảo hộ phòng dịch 7 món cấp độ 4 - An Lành', '<p><strong>Bộ quần &aacute;o chống dịch 7 m&oacute;n cấp độ 4</strong>&nbsp;được d&ugrave;ng ở v&ograve;ng trong c&ugrave;ng, tiếp x&uacute;c trực tiếp với bệnh nh&acirc;n hoặc dịch tỵ hầu. Bộ trang phục ph&ograve;ng chống dịch covid 19 được Memart ph&acirc;n phối ch&iacute;nh h&atilde;ng An L&agrave;nh (h&agrave;ng Việt Nam chất lượng cao). Memart cung cấp đầy đủ giấy tờ để c&oacute; thể đấu thầu trong c&aacute;c bệnh viện, cung cấp cho c&aacute;c tổ chức y tế, tổ chức thiện nguyện.</p>', 'http://127.0.0.1:8000/imageupload/fb8e8eb565fac1ff0c1266109d142062-product.jpg', 250000, 'Việt Nam', 'An Lành', 100, '2021-12-06 18:28:58', '2021-12-06 18:28:58');
+=======
+(9, 'Mặt nạ mũi Nasal mask NM-002-TM', '<p>Mặt nạ mũi Nasal mask NM-002-TM l&agrave; mặt nạ d&agrave;nh cho m&aacute;y trợ thở. Sản phẩm ch&iacute;nh h&atilde;ng của Rescomf được thiết kế th&ocirc;ng minh, hiện đại gi&uacute;p người d&ugrave;ng c&oacute; thể sử dụng một c&aacute;ch thoải m&aacute;i trong qu&aacute; tr&igrave;nh trị liệu.</p>', 'http://127.0.0.1:8000/imageupload/1638425715-Mặt nạ mũi Nasal mask NM-002-TM.png', 999000, 'china', 'RESCOMF', 100, '2021-12-01 23:15:15', '2021-12-01 23:15:15');
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `services`
+=======
+-- Table structure for table `services`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `services` (
@@ -517,17 +685,29 @@ CREATE TABLE `services` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `services`
 --
 
 INSERT INTO `services` (`id`, `fullname`, `gender`, `birthday`, `address`, `email`, `mobilePhone`, `homePhone`, `officePhone`, `status`, `created_at`, `updated_at`) VALUES
 (2, 'nguyễn duy anh', 'Nam', '2002-02-09', 'Thành phố Đà Nẵng', 'ndanh.20it3@vku.udn.vn', '0913361783', '0913361783', '0913361783', 'Đã Lên Lịch', '2021-12-01 19:18:50', '2021-12-05 20:47:41'),
 (3, 'Lê Hữu Hoàn', 'Nam', '2002-03-27', 'Tỉnh Hà Tĩnh', 'lhhoan.20it11@vku.udn', '0345648638', '0345648638', '0345648638', 'Đã Lên Lịch', '2021-12-06 18:35:34', '2021-12-07 00:16:28');
+=======
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`id`, `fullname`, `gender`, `birthday`, `address`, `email`, `mobilePhone`, `homePhone`, `officePhone`, `status`, `created_at`, `updated_at`) VALUES
+(2, 'nguyễn duy anh', 'Nam', '2002-02-09', 'Thành phố Đà Nẵng', 'ndanh.20it3@vku.udn.vn', '0913361783', '0913361783', '0913361783', 'Chưa Xử Lý', '2021-12-01 19:18:50', '2021-12-01 19:18:50');
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Cấu trúc bảng cho bảng `users`
+=======
+-- Table structure for table `users`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 
 CREATE TABLE `users` (
@@ -545,6 +725,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+<<<<<<< HEAD
 -- Đang đổ dữ liệu cho bảng `users`
 --
 
@@ -557,30 +738,57 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `address`, `pho
 
 --
 -- Chỉ mục cho bảng `admins`
+=======
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `address`, `phonenumber`, `password`, `status`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'LÊ HỮU HOÀN', 'hoanle396@gmail.com', NULL, 'Đà Nẵng', '0345648638', '$2y$10$xCUWgC3lzt/UGciMeTAlWukWDsw50evLc.HjsUk7RieH3WF.yhjiW', 'Hoạt Động', NULL, '2021-11-26 23:48:08', '2021-11-26 23:48:53');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `admins`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `admins`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `banks`
+=======
+-- Indexes for table `banks`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `banks`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `failed_jobs`
+=======
+-- Indexes for table `failed_jobs`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `failed_jobs`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `feed_backs`
+=======
+-- Indexes for table `feed_backs`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `feed_backs`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `jobs`
 --
 ALTER TABLE `jobs`
@@ -589,66 +797,105 @@ ALTER TABLE `jobs`
 
 --
 -- Chỉ mục cho bảng `meets`
+=======
+-- Indexes for table `meets`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `meets`
   ADD PRIMARY KEY (`meets_id`),
   ADD KEY `meets_id_foreign` (`id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `migrations`
+=======
+-- Indexes for table `migrations`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `news`
+=======
+-- Indexes for table `news`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `news`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `oauth_access_tokens`
+=======
+-- Indexes for table `oauth_access_tokens`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `oauth_access_tokens`
   ADD PRIMARY KEY (`id`),
   ADD KEY `oauth_access_tokens_user_id_index` (`user_id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `oauth_auth_codes`
+=======
+-- Indexes for table `oauth_auth_codes`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `oauth_auth_codes`
   ADD PRIMARY KEY (`id`),
   ADD KEY `oauth_auth_codes_user_id_index` (`user_id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `oauth_clients`
+=======
+-- Indexes for table `oauth_clients`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `oauth_clients`
   ADD PRIMARY KEY (`id`),
   ADD KEY `oauth_clients_user_id_index` (`user_id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `oauth_personal_access_clients`
+=======
+-- Indexes for table `oauth_personal_access_clients`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `oauth_personal_access_clients`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `oauth_refresh_tokens`
+=======
+-- Indexes for table `oauth_refresh_tokens`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `oauth_refresh_tokens`
   ADD PRIMARY KEY (`id`),
   ADD KEY `oauth_refresh_tokens_access_token_id_index` (`access_token_id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `orders`
+=======
+-- Indexes for table `orders`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `code` (`code`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `order_details`
+=======
+-- Indexes for table `order_details`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `order_details`
   ADD PRIMARY KEY (`id`),
@@ -657,13 +904,21 @@ ALTER TABLE `order_details`
   ADD KEY `user_email` (`user_email`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `password_resets`
+=======
+-- Indexes for table `password_resets`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `personal_access_tokens`
+=======
+-- Indexes for table `personal_access_tokens`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `personal_access_tokens`
   ADD PRIMARY KEY (`id`),
@@ -671,53 +926,86 @@ ALTER TABLE `personal_access_tokens`
   ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `products`
+=======
+-- Indexes for table `products`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`product_id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `services`
+=======
+-- Indexes for table `services`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `services`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< HEAD
 -- Chỉ mục cho bảng `users`
+=======
+-- Indexes for table `users`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
 -- AUTO_INCREMENT cho bảng `admins`
+=======
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `admins`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `admins`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT cho bảng `banks`
+=======
+-- AUTO_INCREMENT for table `banks`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `banks`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT cho bảng `failed_jobs`
+=======
+-- AUTO_INCREMENT for table `failed_jobs`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `failed_jobs`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT cho bảng `feed_backs`
+=======
+-- AUTO_INCREMENT for table `feed_backs`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `feed_backs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT cho bảng `jobs`
 --
 ALTER TABLE `jobs`
@@ -743,17 +1031,43 @@ ALTER TABLE `news`
 
 --
 -- AUTO_INCREMENT cho bảng `oauth_clients`
+=======
+-- AUTO_INCREMENT for table `meets`
+--
+ALTER TABLE `meets`
+  MODIFY `meets_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `migrations`
+--
+ALTER TABLE `migrations`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- AUTO_INCREMENT for table `news`
+--
+ALTER TABLE `news`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `oauth_clients`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `oauth_clients`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT cho bảng `oauth_personal_access_clients`
+=======
+-- AUTO_INCREMENT for table `oauth_personal_access_clients`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `oauth_personal_access_clients`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT cho bảng `orders`
 --
 ALTER TABLE `orders`
@@ -767,11 +1081,27 @@ ALTER TABLE `order_details`
 
 --
 -- AUTO_INCREMENT cho bảng `personal_access_tokens`
+=======
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `order_details`
+--
+ALTER TABLE `order_details`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `personal_access_tokens`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `personal_access_tokens`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
@@ -785,22 +1115,49 @@ ALTER TABLE `services`
 
 --
 -- AUTO_INCREMENT cho bảng `users`
+=======
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `product_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `services`
+--
+ALTER TABLE `services`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `users`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `users`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+<<<<<<< HEAD
 -- Các ràng buộc cho các bảng đã đổ
 --
 
 --
 -- Các ràng buộc cho bảng `meets`
+=======
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `meets`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `meets`
   ADD CONSTRAINT `meets_id_foreign` FOREIGN KEY (`id`) REFERENCES `services` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
+<<<<<<< HEAD
 -- Các ràng buộc cho bảng `order_details`
+=======
+-- Constraints for table `order_details`
+>>>>>>> 07b688ac399237ee0101a9ff327974e0ab18fc03
 --
 ALTER TABLE `order_details`
   ADD CONSTRAINT `order_details_ibfk_1` FOREIGN KEY (`user_email`) REFERENCES `users` (`email`),
