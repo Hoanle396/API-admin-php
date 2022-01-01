@@ -57,7 +57,7 @@ class ProductConroller extends Controller
         $data = [
             'product_name' => $request->product_name,
             'product_description' => $request->product_description,
-            'product_image' => 'http://127.0.0.1:8000/imageupload/' . $newimage,
+            'product_image' => env('APP_HOST','http://127.0.0.1:8000').'/imageupload/' . $newimage,
             'product_price' => $request->product_price,
             'product_origin' => $request->product_origin,
             'product_manufacturer' => $request->product_manufacturer,
