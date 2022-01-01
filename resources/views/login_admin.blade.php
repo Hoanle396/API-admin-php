@@ -17,15 +17,15 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <!-- //bootstrap-css -->
     <!-- Custom CSS -->
-    <link href="{{asset('css/style.css')}}" rel='stylesheet' type='text/css' />
-    <link href="{{asset('css/style-responsive.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/style.css')}}" rel='stylesheet' type='text/css' />
+    <link href="{{asset('public/css/style-responsive.css')}}" rel="stylesheet" />
     <!-- font CSS -->
     <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- font-awesome icons -->
     <link rel="stylesheet" href="{{asset('css/font.css')}}" type="text/css" />
-    <link href="{{asset('css/font-awesome.css')}}" rel="stylesheet">
+    <link href="{{asset('public/css/font-awesome.css')}}" rel="stylesheet">
     <!-- //font-awesome icons -->
-    <script src="{{asset('js/jquery2.0.3.min.js')}}"></script>
+    <script src="{{asset('public/js/jquery2.0.3.min.js')}}"></script>
 </head>
 
 <body>
@@ -53,13 +53,13 @@
             <!-- <p>Chưa Có Tài Kh ?<a href="registration.html">Create an account</a></p> -->
         </div>
     </div>
-    <script src="{{asset('js/bootstrap.js')}}"></script>
-    <script src="{{asset('js/jquery.dcjqaccordion.2.7.js')}}"></script>
-    <script src="{{asset('js/scripts.js')}}"></script>
-    <script src="{{asset('js/jquery.slimscroll.js')}}"></script>
-    <script src="{{asset('js/jquery.nicescroll.js')}}"></script>
+    <script src="{{asset('public/js/bootstrap.js')}}"></script>
+    <script src="{{asset('public/js/jquery.dcjqaccordion.2.7.js')}}"></script>
+    <script src="{{asset('public/js/scripts.js')}}"></script>
+    <script src="{{asset('public/js/jquery.slimscroll.js')}}"></script>
+    <script src="{{asset('public/js/jquery.nicescroll.js')}}"></script>
     <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
-    <script src="{{asset('js/jquery.scrollTo.js')}}"></script>
+    <script src="{{asset('public/js/jquery.scrollTo.js')}}"></script>
 </body>
 
 </html>
