@@ -45,7 +45,7 @@
                                 <div class="form-group ">
                                     <label for="ccomment" class="control-label col-lg-3">Ghi Chú</label>
                                     <div class="col-lg-6">
-                                        <textarea class="form-control input-lg m-bot15"  name="description" style=" resize: none;" required=""></textarea>
+                                        <textarea class="form-control input-lg m-bot15"  name="description" style=" resize: none;"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
