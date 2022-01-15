@@ -9,10 +9,9 @@ use Carbon\Carbon as time;
 use App\Http\Requests\CheckoutRequest;
 use App\Models\Order;
 use App\Models\OrderDetail;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Exception;
-use Illuminate\Support\Facades\Session;
 
 class CheckoutController extends Controller
 {
@@ -28,6 +27,8 @@ class CheckoutController extends Controller
             ];
             Order::create($order);
             foreach ($request->products as $id => $details) {
+                $count= DB::table('products')->where('product_id',$details['product_id'])->select('product_discount')->get()->first();
+                if($count->product_discount>= $details['quantity']){
                 $detail = new OrderDetail();
                 $detail->order_code = $code;
                 $detail->product_id = $details['product_id'];
@@ -41,6 +42,12 @@ class CheckoutController extends Controller
                 $detail->order_status = 'Chờ Xử lý';
                 $detail->order_pay = $request->pay;
                 $detail->save();
+                $newcount =$count->product_discount-$details['quantity'];
+                DB::table('products')->where('product_id',$details['product_id'])->update(['product_discount'=>$newcount]);
+                }
+                else{
+                    return response()->json(['message'=>'Sản phẩm '.$details['product_name'].' đã hết hàng']);
+                }
             }
             if ($request->pay == 'offline') {
                 $orders = OrderDetail::where('order_code', $code)->select('product_name', 'product_quantity')->get();
