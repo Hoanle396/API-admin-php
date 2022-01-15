@@ -62,8 +62,13 @@ class OrderController extends Controller
         if (Session::get("admin_name")) {
             $order = OrderDetail::where('order_code', $id)->select('product_id', 'product_name', 'product_quantity')->orderByDesc('id')->get();
             $user = OrderDetail::where('order_code', $id)->select('order_code', 'user_fullname', 'user_email', 'user_phonenumber', 'user_address', 'order_status', 'order_pay')->orderByDesc('id')->get()->first();
-            $order_ = view('admin.orderdetail')->with('order', $order)->with('user', $user);
-            return view('admin_layout')->with('admin.orderdetail', $order_);
+            if($order && $user){
+                $order_ = view('admin.orderdetail')->with('order', $order)->with('user', $user);
+                return view('admin_layout')->with('admin.orderdetail', $order_);
+            }
+            else{
+                abort(404);
+            }
         } else {
             return Redirect::to('/');
         }
