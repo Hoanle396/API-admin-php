@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index']);
 Route::get('/logout', [App\Http\Controllers\Admin\HomeController::class, 'logout']);
 Route::post('/admin_dashboard',[App\Http\Controllers\Admin\HomeController::class, 'store']);
-Route::get('/Admin/dashboard',[App\Http\Controllers\Admin\HomeController::class, 'create']);
+Route::get('/Admin/dashboard',[App\Http\Controllers\Admin\HomeController::class, 'home']);
 Route::resource('/Admin/product','Admin\ProductConroller');
 Route::resource('/Admin/service','Admin\ServiceController');
 Route::resource('/Admin/auth','Admin\AuthController');

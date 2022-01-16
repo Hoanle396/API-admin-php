@@ -36,7 +36,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function home()
     {
         if(Session::get("admin_name")){
             $order= OrderDetail::orderByDesc('id')->paginate(5);
