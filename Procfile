@@ -1,1 +1,1 @@
-web: @php artisan serve && @php artisan queue:work
+web: php artisan serve
