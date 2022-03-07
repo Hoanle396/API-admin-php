@@ -1,3 +1,4 @@
 web:
 vendor/bin/heroku-php-apache2
-public/
+php artisan serve &&
+php artisan queue:work
